@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Street Mode - Tout à 10€</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: white;
+      color: black;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #ddd;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 10px 0 0 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .gallery {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .item {
+      border: 1px solid #f0f0f0;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .item:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+    }
+    .caption {
+      padding: 12px 10px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .whatsapp, .tiktok {
+      position: fixed;
+      right: 20px;
+      padding: 10px 14px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .whatsapp {
+      bottom: 70px;
+      background: #25D366;
+    }
+    .tiktok {
+      bottom: 20px;
+      background: black;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    STREET MODE - TOUT À 10€
+    <nav>
+      <a href="#">Robes</a>
+      <a href="#">Hauts</a>
+      <a href="#">Jeans</a>
+      <a href="#">Pantalons</a>
+      <a href="#">Accessoires</a>
+    </nav>
+  </header>
+  <div class="gallery">
+    <div class="item">
+      <img src="images/photo1.jpg" alt="Robe verte">
+      <div class="caption">Robe verte imprimée</div>
+    </div>
+  </div>
+  <a class="whatsapp" href="https://wa.me/33623501568" target="_blank">WhatsApp</a>
+  <a class="tiktok" href="https://www.tiktok.com/@tout.a.10marseille" target="_blank">TikTok</a>
+  <footer>© 2025 Street Mode. Tous droits réservés.</footer>
+</body>
+</html>
