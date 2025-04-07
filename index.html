@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Mode - Tout à 10€</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background: white; color: black; }
+    header { padding: 20px; text-align: center; font-size: 24px; font-weight: bold; color: #ec4899; border-bottom: 1px solid #ddd; }
+    nav { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 10px; }
+    nav a { text-decoration: none; color: #ec4899; font-weight: 500; cursor: pointer; }
+    .gallery { padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; }
+    .item { border: 1px solid #eee; border-radius: 16px; overflow: hidden; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .item img { width: 100%; height: auto; }
+    .caption { padding: 10px; font-weight: 500; }
+    .whatsapp { position: fixed; bottom: 80px; right: 20px; background: #25D366; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; }
+    .tiktok { position: fixed; bottom: 20px; right: 20px; background: #000; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; }
+    footer { text-align: center; padding: 20px; font-size: 14px; color: #888; }
+  </style>
+</head>
+<body>
+  <header>
+    Street Mode - Tout à 10€
+    <nav>
+      <a onclick="filterItems('all')">Tous</a>
+      <a onclick="filterItems('robes')">Robes</a>
+      <a onclick="filterItems('hauts')">Hauts</a>
+      <a onclick="filterItems('jeans')">Jeans</a>
+      <a onclick="filterItems('pantalons')">Pantalons</a>
+      <a onclick="filterItems('accessoires')">Accessoires</a>
+    </nav>
+  </header>
+  <div class="gallery">
+    <div class="item" data-category="robes">
+      <img src="images/photo1.png" alt="Article 1">
+      <div class="caption">Robe noire ceinturée</div>
+    </div>
+  </div>
+  <a class="whatsapp" href="https://wa.me/33623501568" target="_blank">WhatsApp</a>
+  <a class="tiktok" href="https://www.tiktok.com/@tout.a.10marseille" target="_blank">TikTok</a>
+  <footer>© 2025 Street Mode. Tous droits réservés.</footer>
+</body>
+</html>
